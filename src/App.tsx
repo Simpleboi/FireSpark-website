@@ -1,6 +1,11 @@
 import { Suspense } from "react";
 import { useRoutes, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
+import LandingPage from "./components/landing/LandingPage";
+import AboutPage from "./components/landing/AboutPage";
+import BlogPage from "./components/landing/BlogPage";
+import DocsPage from "./components/landing/DocsPage";
+import ExamplesPage from "./components/landing/ExamplesPage";
 import routes from "tempo-routes";
 
 function App() {
@@ -8,7 +13,12 @@ function App() {
     <Suspense fallback={<p>Loading...</p>}>
       <>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/components" element={<Home />} />
+          <Route path="/docs" element={<DocsPage />} />
+          <Route path="/examples" element={<ExamplesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>
