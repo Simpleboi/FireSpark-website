@@ -11,6 +11,9 @@ import {
   Moon,
   Code2,
   Puzzle,
+  Github,
+  Twitter,
+  Linkedin,
 } from "lucide-react";
 
 const features = [
@@ -61,6 +64,53 @@ const features = [
     title: "Built on SparkCSS",
     description:
       "FireSpark is powered by SparkCSS, giving you access to advanced directives like @snippet, @apply, and design tokens. This means your components are not only reusable but also infinitely customizable.",
+  },
+];
+
+const developers = [
+  {
+    name: "Sarah Chen",
+    role: "Lead Developer",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
+    bio: "Full-stack developer with a passion for building accessible and performant web applications.",
+    social: {
+      github: "https://github.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+    },
+  },
+  {
+    name: "Marcus Rodriguez",
+    role: "UI/UX Developer",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=marcus",
+    bio: "Designer turned developer, focusing on creating beautiful and intuitive user interfaces.",
+    social: {
+      github: "https://github.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+    },
+  },
+  {
+    name: "Aisha Patel",
+    role: "Core Developer",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=aisha",
+    bio: "Performance optimization specialist with expertise in building scalable component systems.",
+    social: {
+      github: "https://github.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+    },
+  },
+  {
+    name: "David Kim",
+    role: "Developer Advocate",
+    image: "https://api.dicebear.com/7.x/avataaars/svg?seed=david",
+    bio: "Community builder and educator, helping developers make the most of FireSpark.",
+    social: {
+      github: "https://github.com",
+      twitter: "https://twitter.com",
+      linkedin: "https://linkedin.com",
+    },
   },
 ];
 
@@ -117,8 +167,64 @@ const AboutPage = () => {
         </div>
       </div>
 
+      {/* Meet the Developers */}
+      <div className="container mx-auto px-4 py-24">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4">Meet the Developers</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Meet the talented team behind FireSpark, dedicated to creating the
+            best developer experience.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          {developers.map((developer, index) => (
+            <div
+              key={index}
+              className="bg-background border rounded-lg p-6 text-center"
+            >
+              <img
+                src={developer.image}
+                alt={developer.name}
+                className="w-24 h-24 rounded-full mx-auto mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-1">{developer.name}</h3>
+              <p className="text-sm text-primary mb-2">{developer.role}</p>
+              <p className="text-sm text-muted-foreground mb-4">
+                {developer.bio}
+              </p>
+              <div className="flex justify-center gap-4">
+                <a
+                  href={developer.social.github}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+                <a
+                  href={developer.social.twitter}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Twitter className="h-5 w-5" />
+                </a>
+                <a
+                  href={developer.social.linkedin}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* CTA Section */}
-      <div className="container mx-auto px-4 py-24 text-center">
+      <div className="container mx-auto px-4 py-24 text-center bg-muted/50">
         <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Join thousands of developers building better interfaces with
