@@ -69,12 +69,12 @@ const features = [
 
 const developers = [
   {
-    name: "Sarah Chen",
-    role: "Lead Developer",
+    name: "Nathaniel Paz",
+    role: "Founder/Lead Developer",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
-    bio: "Full-stack developer with a passion for building accessible and performant web applications.",
+    bio: "Full-stack developer with a passion for building performant web applications and aspiring computer scientist.",
     social: {
-      github: "https://github.com",
+      github: "https://github.com/Simpleboi",
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
     },
