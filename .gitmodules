@@ -1,0 +1,3 @@
+[submodule "FireSpark-website"]
+    path = FireSpark-website
+    url = https://github.com/Simpleboi/FireSpark-website
