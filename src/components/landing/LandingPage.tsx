@@ -4,6 +4,12 @@ import { useNavigate } from "react-router-dom";
 import Navigation from "./Navigation";
 import { Badge } from "@/components/ui/badge";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   Flame,
   Code2,
   Paintbrush,
@@ -23,6 +29,7 @@ import {
   Shield,
   Copy,
   ExternalLink,
+  Quote,
 } from "lucide-react";
 
 const LandingPage = () => {
@@ -62,6 +69,32 @@ const LandingPage = () => {
           >
             <Wrench className="mr-2 h-4 w-4" /> Developer Tools
           </Button>
+        </div>
+      </div>
+
+      {/* Metrics Section */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="space-y-2">
+            <div className="text-3xl font-bold">100+</div>
+            <div className="text-sm text-muted-foreground">Components</div>
+          </div>
+          <div className="space-y-2">
+            <div className="text-3xl font-bold">50k+</div>
+            <div className="text-sm text-muted-foreground">
+              Weekly Downloads
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="text-3xl font-bold">95%</div>
+            <div className="text-sm text-muted-foreground">
+              Satisfaction Rate
+            </div>
+          </div>
+          <div className="space-y-2">
+            <div className="text-3xl font-bold">10k+</div>
+            <div className="text-sm text-muted-foreground">GitHub Stars</div>
+          </div>
         </div>
       </div>
 
@@ -267,6 +300,86 @@ export default {
         </div>
       </div>
 
+      {/* Testimonials Section */}
+      <div className="container mx-auto px-4 py-24 bg-muted/50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Loved by Developers</h2>
+            <p className="text-xl text-muted-foreground">
+              Join thousands of developers building better interfaces with
+              FireSpark
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-background p-8 rounded-lg border space-y-6">
+              <Quote className="h-8 w-8 text-primary/20" />
+              <p className="text-muted-foreground">
+                "FireSpark has revolutionized our component development
+                workflow. The framework-agnostic approach is exactly what we
+                needed for our diverse tech stack."
+              </p>
+              <div className="flex items-center gap-4 pt-4 border-t">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=sarah"
+                  alt="Sarah Chen"
+                  className="w-10 h-10 rounded-full"
+                />
+                <div>
+                  <h3 className="font-semibold">Sarah Chen</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Senior Developer at TechCorp
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-background p-8 rounded-lg border space-y-6">
+              <Quote className="h-8 w-8 text-primary/20" />
+              <p className="text-muted-foreground">
+                "The documentation and component playground make it incredibly
+                easy to get started. Best developer experience I've had with a
+                UI library."
+              </p>
+              <div className="flex items-center gap-4 pt-4 border-t">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=alex"
+                  alt="Alex Rivera"
+                  className="w-10 h-10 rounded-full"
+                />
+                <div>
+                  <h3 className="font-semibold">Alex Rivera</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Lead UI Engineer at StartupX
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-background p-8 rounded-lg border space-y-6">
+              <Quote className="h-8 w-8 text-primary/20" />
+              <p className="text-muted-foreground">
+                "The theme customization capabilities are outstanding. We were
+                able to match our brand perfectly with minimal effort."
+              </p>
+              <div className="flex items-center gap-4 pt-4 border-t">
+                <img
+                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=emily"
+                  alt="Emily Zhang"
+                  className="w-10 h-10 rounded-full"
+                />
+                <div>
+                  <h3 className="font-semibold">Emily Zhang</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Frontend Architect at DevCo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Preview Section */}
       <div className="container mx-auto px-4 py-24 text-center">
         <h2 className="text-3xl font-bold mb-16">Clean, Minimal, Powerful</h2>
@@ -276,6 +389,78 @@ export default {
             alt="FireSpark Interface"
             className="w-full h-full object-cover"
           />
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="container mx-auto px-4 py-24">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Everything you need to know about FireSpark
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Is FireSpark free to use?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes, FireSpark is completely open-source and free to use in both
+                personal and commercial projects. We also offer enterprise
+                support plans for teams requiring additional assistance.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Can I use FireSpark with my existing project?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Absolutely! FireSpark is designed to be framework-agnostic and
+                can be integrated into existing React, Vue, or Svelte projects
+                with minimal setup required.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                How often do you release updates?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                We maintain a regular release schedule with minor updates every
+                two weeks and major versions quarterly. All changes are
+                carefully documented in our changelog.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                What kind of support do you offer?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                We provide comprehensive documentation, community support
+                through Discord, and GitHub issues. Enterprise customers get
+                access to dedicated support channels and priority issue
+                resolution.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                Can I customize the components to match my brand?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">
+                Yes, FireSpark components are highly customizable through our
+                theming system. You can modify colors, typography, spacing, and
+                other design tokens to match your brand guidelines perfectly.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
 
