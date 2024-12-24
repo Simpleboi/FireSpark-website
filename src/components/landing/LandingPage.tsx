@@ -10,6 +10,7 @@ import {
   Github,
   Twitter,
   Linkedin,
+  Wrench,
 } from "lucide-react";
 
 const LandingPage = () => {
@@ -29,13 +30,23 @@ const LandingPage = () => {
           A minimalist, framework-agnostic component library with a focus on
           clean design and exceptional developer experience
         </p>
-        <Button
-          size="lg"
-          className="mt-8 text-lg"
-          onClick={() => navigate("/components")}
-        >
-          Try Components
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button
+            size="lg"
+            className="text-lg"
+            onClick={() => navigate("/components")}
+          >
+            Try Components
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            className="text-lg"
+            onClick={() => navigate("/tools")}
+          >
+            <Wrench className="mr-2 h-4 w-4" /> Developer Tools
+          </Button>
+        </div>
       </div>
 
       {/* Features Grid */}

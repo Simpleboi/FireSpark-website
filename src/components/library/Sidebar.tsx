@@ -2,6 +2,7 @@ import React from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useNavigate } from "react-router-dom";
 import {
   Search,
   ChevronRight,
@@ -57,16 +58,22 @@ const Sidebar = ({
   onComponentSelect = () => {},
   selectedComponentId = "",
 }: SidebarProps) => {
+  const navigate = useNavigate();
+
   return (
     <div className="h-full w-[280px] border-r bg-background flex flex-col">
       <div className="p-4 border-b">
         <div className="flex items-center space-x-2 mb-4">
-          <div className="flex items-center gap-2 text-primary">
+          <Button
+            variant="ghost"
+            className="flex items-center gap-2 text-primary p-0 hover:bg-transparent"
+            onClick={() => navigate("/")}
+          >
             <Flame className="h-6 w-6" />
             <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
               FireSpark
             </h2>
-          </div>
+          </Button>
         </div>
         <div className="relative">
           <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />

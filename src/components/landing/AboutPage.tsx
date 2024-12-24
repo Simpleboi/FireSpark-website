@@ -1,44 +1,66 @@
 import React from "react";
 import Navigation from "./Navigation";
 import { Button } from "@/components/ui/button";
-import { Flame, Heart, Users, Star, Rocket } from "lucide-react";
+import {
+  Flame,
+  Zap,
+  Palette,
+  Package,
+  Layout,
+  Accessibility,
+  Moon,
+  Code2,
+  Puzzle,
+} from "lucide-react";
 
-const teamMembers = [
+const features = [
   {
-    name: "Sarah Chen",
-    role: "Founder & Lead Developer",
-    image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    icon: <Zap className="h-6 w-6" />,
+    title: "Blazing-Fast Components",
+    description:
+      "FireSpark components are optimized for speed and efficiency, ensuring fast load times and a responsive user experience. Each component is built to be lightweight and modular, reducing unnecessary bloat.",
   },
   {
-    name: "Marcus Rodriguez",
-    role: "Design Systems Architect",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+    icon: <Palette className="h-6 w-6" />,
+    title: "Customizable Design System",
+    description:
+      "FireSpark allows developers to customize colors, typography, and layout using design tokens and CSS variables. This means you can adjust themes globally or at the component level, providing complete flexibility in your design system.",
   },
   {
-    name: "Aisha Patel",
-    role: "Developer Experience Lead",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-  },
-];
-
-const timeline = [
-  {
-    year: "2023",
-    title: "FireSpark Launch",
-    description: "Initial release of our component library",
+    icon: <Package className="h-6 w-6" />,
+    title: "Pre-Built UI Components",
+    description:
+      "Access a wide range of essential UI components, including buttons, modals, alerts, cards, navbars, grids, and more. Each component is built to be composable, so developers can customize and extend them with ease.",
   },
   {
-    year: "2023",
-    title: "Framework Support",
-    description: "Added Vue and Svelte compatibility",
+    icon: <Layout className="h-6 w-6" />,
+    title: "Responsive Utility Classes",
+    description:
+      "With the full power of SparkCSS utility classes baked in, FireSpark uses these classes to handle spacing, typography, alignment, colors, and responsive design.",
   },
   {
-    year: "2024",
-    title: "Community Growth",
-    description: "Reached 1000+ GitHub stars",
+    icon: <Accessibility className="h-6 w-6" />,
+    title: "Accessibility-First Approach",
+    description:
+      "Every FireSpark component is built with accessibility (a11y) in mind, following best practices to ensure usability for all users. Components have proper ARIA roles, keyboard navigation, and focus management baked in.",
+  },
+  {
+    icon: <Moon className="h-6 w-6" />,
+    title: "Easy Theming & Dark Mode",
+    description:
+      "Built with theming in mind, FireSpark lets you toggle between light and dark modes effortlessly. By leveraging CSS variables, themes can be customized globally or at a component-specific level.",
+  },
+  {
+    icon: <Code2 className="h-6 w-6" />,
+    title: "Developer-Centric API",
+    description:
+      "FireSpark aims to be simple, intuitive, and developer-friendly. Import only the components you need, customize them through props, and integrate them with any framework or project.",
+  },
+  {
+    icon: <Puzzle className="h-6 w-6" />,
+    title: "Built on SparkCSS",
+    description:
+      "FireSpark is powered by SparkCSS, giving you access to advanced directives like @snippet, @apply, and design tokens. This means your components are not only reusable but also infinitely customizable.",
   },
 ];
 
@@ -47,102 +69,67 @@ const AboutPage = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Mission Section */}
-      <div className="container mx-auto px-4 pt-32">
-        <div className="max-w-3xl mx-auto text-center">
+      {/* Hero Section */}
+      <div className="container mx-auto px-4 pt-32 pb-16">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <Flame className="h-12 w-12 text-primary" />
           </div>
-          <h1 className="text-4xl font-bold mb-6">Our Mission</h1>
-          <p className="text-xl text-muted-foreground">
-            We're on a mission to make component development more accessible,
-            efficient, and enjoyable for developers worldwide.
-          </p>
-        </div>
-      </div>
-
-      {/* Values Section */}
-      <div className="container mx-auto px-4 py-24">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 border rounded-lg text-center">
-            <Heart className="h-8 w-8 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Open Source First</h3>
-            <p className="text-muted-foreground">
-              We believe in the power of community-driven development.
+          <h1 className="text-4xl font-bold mb-6">About FireSpark</h1>
+          <div className="space-y-6 text-lg text-muted-foreground">
+            <p>
+              FireSpark is a fast, modern, and highly customizable
+              component-based library designed to supercharge your web
+              development workflow. Built on top of SparkCSS with efficiency,
+              scalability, and ease of use in mind, FireSpark offers developers
+              a sleek, unified system of pre-built UI components, utility
+              classes, and customizable design tokens.
             </p>
-          </div>
-          <div className="p-6 border rounded-lg text-center">
-            <Users className="h-8 w-8 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Community Focus</h3>
-            <p className="text-muted-foreground">
-              Building tools that empower developers to create better
-              experiences.
-            </p>
-          </div>
-          <div className="p-6 border rounded-lg text-center">
-            <Star className="h-8 w-8 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Excellence</h3>
-            <p className="text-muted-foreground">
-              Committed to maintaining the highest standards in our code.
+            <p>
+              FireSpark delivers components that are lightweight, accessible,
+              and responsive. The goal of FireSpark is to provide developers
+              with a cohesive design system that reduces development time while
+              maintaining full creative control. Every component is crafted with
+              modern design principles, ensuring consistency, responsiveness,
+              and cross-browser compatibility.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Team Section */}
+      {/* Features Grid */}
       <div className="container mx-auto px-4 py-24 bg-muted/50">
-        <h2 className="text-3xl font-bold text-center mb-12">Meet the Team</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {teamMembers.map((member) => (
-            <div key={member.name} className="text-center">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-              />
-              <h3 className="text-xl font-semibold">{member.name}</h3>
-              <p className="text-muted-foreground">{member.role}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Timeline Section */}
-      <div className="container mx-auto px-4 py-24">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Journey</h2>
-        <div className="max-w-2xl mx-auto">
-          {timeline.map((item, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {features.map((feature, index) => (
             <div
               key={index}
-              className="flex gap-8 mb-8 last:mb-0 relative before:absolute before:left-[27px] before:top-[40px] before:h-full before:w-[2px] before:bg-border last:before:hidden"
+              className="p-6 bg-background border rounded-lg space-y-4"
             >
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                <span className="font-bold">{item.year}</span>
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-primary/10 rounded-lg text-primary">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold">{feature.title}</h3>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </div>
+              <p className="text-muted-foreground">{feature.description}</p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Join Us Section */}
-      <div className="container mx-auto px-4 py-24 text-center bg-muted/50">
-        <Rocket className="h-12 w-12 mx-auto mb-6" />
-        <h2 className="text-3xl font-bold mb-6">Join Our Journey</h2>
+      {/* CTA Section */}
+      <div className="container mx-auto px-4 py-24 text-center">
+        <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          We're always looking for talented individuals who share our passion
-          for building great developer tools.
+          Join thousands of developers building better interfaces with
+          FireSpark.
         </p>
         <div className="flex gap-4 justify-center">
           <Button size="lg" asChild>
-            <a href="/careers">View Openings</a>
+            <a href="/docs">Read the Docs</a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="https://github.com/firespark">Contribute</a>
+            <a href="/components">Browse Components</a>
           </Button>
         </div>
       </div>
