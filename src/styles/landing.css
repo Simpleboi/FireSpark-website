@@ -1,0 +1,16 @@
+
+.landingpage {
+    background: linear-gradient(90deg, #FF5722 0%, #FF8E53 40%, #9B6DD1 70%, #6B46C1 100%);
+}
+
+/* 
+Primary Gradient: Orange (#FF5722) to Purple (#6B46C1)
+
+Secondary Accents: Electric Blue (#3B82F6) for interactive elements
+
+Card Backgrounds: White with subtle gradient borders
+
+Text Colors: Dark (#0F172A) on light backgrounds, White on gradients
+
+Animations: Smooth transitions (300ms ease-in-out)
+*/

@@ -9,6 +9,7 @@ import { LandingFooter } from "../pages/footer";
 import { LandingTestimonals } from "../pages/testimonials";
 import { LandingHero } from "../pages/hero";
 import { LandingIntegration } from "../pages/integration";
+import "../../styles/landing.css";
 import {
   Accordion,
   AccordionContent,
@@ -46,7 +47,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background landingpage">
       <Navigation />
 
       <LandingHero />
