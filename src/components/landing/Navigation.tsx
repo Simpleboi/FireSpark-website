@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, Flame, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import "../../styles/nav.scss";
 
 const Navigation = () => {
   const [theme, setTheme] = React.useState("light");
@@ -16,11 +17,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
+    <nav className="navigation">
       <div className="container flex h-14 items-center justify-between">
         <div className="flex items-center gap-2">
-          <Flame className="h-6 w-6" />
-          <Link to="/" className="text-xl font-bold">
+          <Flame className="h-6 w-6 firespark-flame" />
+          <Link to="/" className="text-xl font-bold nav-firespark">
             FireSpark
           </Link>
         </div>
@@ -30,7 +31,7 @@ const Navigation = () => {
             <Link
               key={link.href}
               to={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors nav-link"
             >
               {link.label}
             </Link>

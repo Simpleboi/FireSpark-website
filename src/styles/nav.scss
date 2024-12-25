@@ -1,0 +1,33 @@
+@use "./plug" as p;
+
+nav {
+    // border: 2px solid red;
+    background-color: p.$linearGrad;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); // Add blur effect
+  -webkit-backdrop-filter: blur(10px); 
+
+  .nav-link {
+    // border: 1px solid red;
+    color: p.$primary-dark;
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    color: p.$primary-hover;
+    filter: p.$glowFilter;
+    transition: all 0.2s ease;
+  }
+
+  .nav-firespark {
+    color: p.$primary-dark;
+  }
+
+  .firespark-flame {
+    color: p.$primary-dark;
+  }
+
+}

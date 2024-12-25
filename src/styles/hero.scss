@@ -1,0 +1,44 @@
+@use "./plug" as p;
+
+.cont {
+    // border: 1px solid red;
+    padding-top: 140px;
+
+    .hero-title {
+        // border: 1px solid red;
+        color: p.$primary-dark;
+        filter: drop-shadow(0 0 10px #00bfff);
+    }
+
+    .hero-paragraph {
+        color: p.$text-primary;
+    }
+
+    .hero-compbtn {
+        // border: 1px solid red;
+        color: p.$primary-dark;
+        background-color: p.$dark;
+    }
+
+    .hero-compbtn:hover {
+        color: p.$primary-hover;
+        filter: drop-shadow(0 0 10px #00bfff);
+        transition: all 0.2s ease;
+    }
+
+    .hero-devbtn {
+        background-color: p.$text-primary;
+        color: p.$dark;
+    }
+
+    .hero-devbtn:hover {
+        // box-shadow: p.$boxShadowGlow;
+        filter: p.$glowFilter;
+        transition: all 0.2s ease;
+    }
+
+    .firespark-flame {
+        color: p.$primary-dark;
+        filter: p.$glowFilter;
+    }
+}
