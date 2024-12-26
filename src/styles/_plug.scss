@@ -1,17 +1,71 @@
 
 
 // Color pallette
+// Primary Colors
+$primary: #00bfff; // Main accent color (soft neon blue)
+$primary-hover: #66d9ff; // Lighter shade for hover
+$primary-dark: #008ccc; // Darker shade for active states
 
-$primary: #00bfff;
-$primary-hover: #66d9ff;
-$primary-dark: #008ccc;
-$dark: #0a0a0a;
+// Secondary Accent Colors
+$secondary: #ff99ff; // Neon pink 
+$secondary-hover: #ffb3ff; // Lighter neon pink
+$secondary-dark: #cc66cc; // Darker neon pink
 
-$text-primary: #e6e6e6;
-$text-secondary: #b0b0b0;
-$text-highlight: #00bfff;
+// Dark Shades
+$dark: #0a0a0a; // Almost black
+$dark-alt: #121212; // Slightly lighter for containers
+$dark-blue: #001f33; // Deep blue for gradients
 
-$boxShadowGlow: 0 0 10px rgba(0, 191, 255, 0.5);
+// Light Shades
+$light: #f2f2f2; // Off-white for backgrounds
+$light-gray: #d8d8d8; // Light gray for borders or subtle text
+
+// Text Colors
+$text-primary: #e6e6e6; // Main text color
+$text-secondary: #b0b0b0; // Subdued text
+$text-highlight: #00bfff; // Highlighted text
+$text-danger: #ff4c4c; // Error or warning messages
+$text-success: #4cff4c; // Success messages
+
+// Borders and Shadows
+$border-light: rgba(230, 230, 230, 0.1); // Light border for cards or containers
+$border-dark: rgba(10, 10, 10, 0.6); // Dark border
+$boxShadowGlow: 0 0 10px rgba(0, 191, 255, 0.5); // Blue glow shadow
+$boxShadowSoft: 0 4px 6px rgba(0, 0, 0, 0.2); // Soft shadow
+
+// Glow Effects
+$glow-primary: drop-shadow(0 0 10px #00bfff); // Blue glow
+$glow-secondary: drop-shadow(0 0 10px #ff99ff); // Pink glow
+$glow-filter: drop-shadow(0 0 10px $primary);
+
+// Gradients
+$linearGrad: linear-gradient(90deg, #0a0a0a, #001f33); // Background gradient
+$linearGrad-accent: linear-gradient(90deg, #00bfff, #66d9ff); // Button or card accents
+$linearGrad-secondary: linear-gradient(90deg, #ff99ff, #ffb3ff); // Secondary accent
+$linearGrad-dark: linear-gradient(90deg, #0a0a0a, #121212); // Subtle dark gradient
+
+// Alerts
+$alert-success: #00cc66; // Green for success alerts
+$alert-warning: #ffcc00; // Yellow for warnings
+$alert-error: #ff3333; // Red for errors
+
+// Utility Colors
+$overlay: rgba(0, 0, 0, 0.6); // Overlay for modals
+$highlight-overlay: rgba(0, 191, 255, 0.1); // Subtle highlight background
+$card-bg: rgba(18, 18, 18, 0.8); // Card background
+
+// Typography Colors
+$heading-color: $text-primary; // For headings
+$muted-text: $text-secondary; // For less important text
+$link-color: $primary; // For links
+$link-hover: $primary-hover; // Link hover color
+
+
 $glowFilter: drop-shadow(0 0 10px #00bfff);
-
 $linearGrad: linear-gradient(90deg, #0a0a0a, #001f33);
+
+
+
+
+
+

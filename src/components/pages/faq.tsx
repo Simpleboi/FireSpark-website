@@ -46,7 +46,7 @@ export const LandingFAQ = () => {
               How often do you release updates?
             </AccordionTrigger>
             <AccordionContent className="text-muted-foreground">
-              We maintain a regular release schedule with minor updates every
+              I try to maintain a regular release schedule with minor updates every
               two weeks and major versions quarterly. All changes are carefully
               documented in our changelog.
             </AccordionContent>

@@ -13,8 +13,7 @@ export const LandingHero = () => {
         <h1 className="text-4xl md:text-6xl hero-title">FireSpark</h1>
       </div>
       <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl hero-paragraph">
-        A minimalist, framework-agnostic component library with a focus on clean
-        design and exceptional developer experience
+      The only component library you'll ever need for fast, beautiful, and framework-agnostic web development. Built on top of SparkCSS, with a little extra fire
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <Button

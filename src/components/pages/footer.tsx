@@ -1,3 +1,4 @@
+
 import {
   Flame,
   Github,
@@ -11,11 +12,11 @@ import {
   Headphones,
   Shield,
 } from "lucide-react";
-
+import "../../styles/footer.scss";
 
 export const LandingFooter = () => {
   return (
-    <footer className="bg-muted/50 border-t mt-24">
+    <footer className="mt-24">
       <div className="container mx-auto px-4 py-12">
         {/* Top Footer Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">

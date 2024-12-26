@@ -1,0 +1,14 @@
+@use "./plug" as p;
+
+.testimonial-container {
+    // border: 2px solid red;
+
+    .test-card-container {
+        box-shadow: p.$boxShadowGlow;
+    }
+
+    .test-card-name {
+        // border: 1px solid red;
+        color: p.$primary-dark;
+    }
+}

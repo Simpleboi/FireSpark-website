@@ -1,8 +1,9 @@
 import { Quote } from "lucide-react";
+import "../../styles/testimonials.scss";
 
 export const LandingTestimonals = () => {
   return (
-    <div className="container mx-auto px-4 py-24 bg-muted/50">
+    <div className="container mx-auto px-4 py-24 testimonial-container">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Loved by Developers</h2>
@@ -13,7 +14,7 @@ export const LandingTestimonals = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-background p-8 rounded-lg border space-y-6">
+          <div className="bg-background p-8 rounded-lg border space-y-6 test-card-container">
             <Quote className="h-8 w-8 text-primary/20" />
             <p className="text-muted-foreground">
               "FireSpark has revolutionized our component development workflow.
@@ -27,15 +28,15 @@ export const LandingTestimonals = () => {
                 className="w-10 h-10 rounded-full"
               />
               <div>
-                <h3 className="font-semibold">Sarah Chen</h3>
+                <h3 className="font-semibold test-card-name">John Doe</h3>
                 <p className="text-sm text-muted-foreground">
-                  Senior Developer at TechCorp
+                  Some Developer at XYZ
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="bg-background p-8 rounded-lg border space-y-6">
+          <div className="bg-background p-8 rounded-lg border space-y-6 test-card-container">
             <Quote className="h-8 w-8 text-primary/20" />
             <p className="text-muted-foreground">
               "The documentation and component playground make it incredibly
@@ -49,15 +50,15 @@ export const LandingTestimonals = () => {
                 className="w-10 h-10 rounded-full"
               />
               <div>
-                <h3 className="font-semibold">Alex Rivera</h3>
+                <h3 className="font-semibold test-card-name">John Doe</h3>
                 <p className="text-sm text-muted-foreground">
-                  Lead UI Engineer at StartupX
+                  Some UI Engineer at XYZ
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="bg-background p-8 rounded-lg border space-y-6">
+          <div className="bg-background p-8 rounded-lg border space-y-6 test-card-container">
             <Quote className="h-8 w-8 text-primary/20" />
             <p className="text-muted-foreground">
               "The theme customization capabilities are outstanding. We were
@@ -70,9 +71,9 @@ export const LandingTestimonals = () => {
                 className="w-10 h-10 rounded-full"
               />
               <div>
-                <h3 className="font-semibold">Emily Zhang</h3>
+                <h3 className="font-semibold test-card-name">John Doe</h3>
                 <p className="text-sm text-muted-foreground">
-                  Frontend Architect at DevCo
+                  Some Developer in Asia
                 </p>
               </div>
             </div>
