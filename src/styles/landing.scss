@@ -1,6 +1,7 @@
+@use "./plug" as p;
 
 .landingpage {
-    background: linear-gradient(90deg, #0a0a0a, #001f33);
+    background: p.$linearGrad;
     color: #e6e6e6;
     position: relative;
 }

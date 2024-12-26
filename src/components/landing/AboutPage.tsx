@@ -1,6 +1,6 @@
-import React from "react";
 import Navigation from "./Navigation";
 import { Button } from "@/components/ui/button";
+import "../../styles/AboutStyles/about.scss";
 import {
   Flame,
   Zap,
@@ -116,18 +116,17 @@ const developers = [
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen about-landing">
       <Navigation />
 
-      {/* Hero Section */}
-      <div className="container mx-auto px-4 pt-32 pb-16">
+      <div className="about-container container mx-auto px-4 pt-32 pb-16">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
-            <Flame className="h-12 w-12 text-primary" />
+            <Flame className="h-12 w-12 text-primary about-icon" />
           </div>
-          <h1 className="text-4xl font-bold mb-6">About FireSpark</h1>
+          <h1 className="text-4xl font-bold mb-6 about-title">About FireSpark</h1>
           <div className="space-y-6 text-lg text-muted-foreground">
-            <p>
+            <p className="about-heading">
               FireSpark is a fast, modern, and highly customizable
               component-based library designed to supercharge your web
               development workflow. Built on top of SparkCSS with efficiency,
@@ -135,7 +134,7 @@ const AboutPage = () => {
               a sleek, unified system of pre-built UI components, utility
               classes, and customizable design tokens.
             </p>
-            <p>
+            <p className="about-heading">
               FireSpark delivers components that are lightweight, accessible,
               and responsive. The goal of FireSpark is to provide developers
               with a cohesive design system that reduces development time while
@@ -148,7 +147,7 @@ const AboutPage = () => {
       </div>
 
       {/* Features Grid */}
-      <div className="container mx-auto px-4 py-24 bg-muted/50">
+      <div className="container mx-auto px-4 py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => (
             <div
@@ -224,7 +223,7 @@ const AboutPage = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="container mx-auto px-4 py-24 text-center bg-muted/50">
+      <div className="container mx-auto px-4 py-24 text-center">
         <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Join thousands of developers building better interfaces with
