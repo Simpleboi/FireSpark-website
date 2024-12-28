@@ -1,6 +1,7 @@
 
 
 // Color pallette
+
 // Primary Colors
 $primary: #00bfff; // Main accent color (soft neon blue)
 $primary-hover: #66d9ff; // Lighter shade for hover
@@ -28,10 +29,10 @@ $text-danger: #ff4c4c; // Error or warning messages
 $text-success: #4cff4c; // Success messages
 
 // Borders and Shadows
-$border-light: rgba(230, 230, 230, 0.1); // Light border for cards or containers
-$border-dark: rgba(10, 10, 10, 0.6); // Dark border
-$boxShadowGlow: 0 0 10px rgba(0, 191, 255, 0.5); // Blue glow shadow
-$boxShadowSoft: 0 4px 6px rgba(0, 0, 0, 0.2); // Soft shadow
+$border-light: rgba(230, 230, 230, 0.1);
+$border-dark: rgba(10, 10, 10, 0.6);
+$boxShadowGlow: 0 0 10px rgba(0, 191, 255, 0.5); 
+$boxShadowSoft: 0 4px 6px rgba(0, 0, 0, 0.2); 
 
 // Glow Effects
 $glow-primary: drop-shadow(0 0 10px #00bfff); // Blue glow

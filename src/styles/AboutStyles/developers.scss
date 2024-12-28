@@ -1,0 +1,34 @@
+@use "../plug" as p;
+
+.mtd-container {
+//   border: 1px solid red;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 6rem 2rem;
+
+  .mtd-top-container {
+    // border: 1px solid red;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .mtd-header {
+      font-size: 2.5rem;
+      line-height: 2.25rem;
+      font-weight: 550;
+      color: p.$primary;
+      filter: p.$glow-primary;
+    }
+
+    p {
+        color: p.$light-gray;
+        margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .mtd-container {
+    max-width: 1400px;
+  }
+}
