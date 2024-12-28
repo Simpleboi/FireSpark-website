@@ -169,7 +169,6 @@ const AboutPage = () => {
 
       <MeetTheDevelopers />
 
-
       {/* CTA Section */}
       <div className="container mx-auto px-4 py-24 text-center">
         <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
