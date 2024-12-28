@@ -1,0 +1,63 @@
+@use "../plug" as p;
+
+.about-cta-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 6rem 2rem;
+//   border: 1px solid red;
+  text-align: center;
+
+  .about-cta-header {
+    // border: 1px solid red;
+    font-size: 2.2rem;
+    line-height: 2.25rem;
+    font-weight: 550;
+    margin-bottom: 1.5rem;
+    color: p.$primary;
+    filter: p.$glow-primary;
+  }
+
+  p {
+    color: p.$text-primary;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 42rem;
+    margin: 1.5rem auto;
+  }
+
+  .about-ctabtn-container {
+    // border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: center;
+
+    .rtd {
+        color: p.$primary;
+        background-color: p.$dark-blue;
+    }
+
+    .rtd:hover {
+        color: p.$primary-hover;
+        box-shadow: p.$boxShadowGlow;
+        transition: all 0.25s ease;
+    }
+
+    .browse {
+        color: p.$dark;
+        background-color: p.$light;
+    }
+
+    .browse:hover {
+        box-shadow: p.$boxShadowGlow;
+        transition: all 0.25s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .about-cta-container {
+    max-width: 1400px;
+  }
+}

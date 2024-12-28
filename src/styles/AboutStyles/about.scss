@@ -2,10 +2,6 @@
 
 .about-landing {
     background: p.$linearGrad;
-    
-    .about-container {
-        // border: 1px solid red;
-    }
 
     :is(.about-icon, .about-title) {
         color: p.$primary;
